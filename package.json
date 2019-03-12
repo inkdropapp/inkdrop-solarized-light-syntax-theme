@@ -1,8 +1,9 @@
 {
+  "version": "1.0.0",
   "name": "solarized-light-syntax",
   "theme": "syntax",
   "styleSheets": ["solarized.less"],
   "engines": {
-    "inkdrop": "^3.25.2"
+    "inkdrop": "^4.x"
   }
 }
