@@ -26,10 +26,10 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     }
 
     .cm-header { color: @base01; }
-    .cm-quote { color: @base1; }
+    .cm-quote { color: @base1; font-style: italic; }
 
-    .cm-keyword { color: @solar-orange; }
-    .cm-atom { color: @solar-magenta; }
+    .cm-keyword, .cm-formatting-list.cm-variable-2 { color: @solar-orange; }
+    .cm-atom, .cm-formatting-list.cm-variable-3 { color: @solar-magenta; }
     .cm-number { color: @solar-magenta; }
     .cm-def { color: @solar-cyan; }
 
@@ -60,7 +60,11 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
       display: block;
     }
     */
-    .cm-link { color: @base1; }
+    .cm-hr { color: @solar-yellow; }
+    .cm-link, .cm-url {
+      color: @solar-cyan;
+      text-underline-position: under;
+    }
     .cm-special { color: @solar-violet; }
     .cm-em {
       color: #999;
@@ -79,6 +83,19 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
       color: @base01;
       opacity: 0.4;
+    }
+
+    .cm-inline-code {
+      background: rgba(255, 255, 255, 0.04);
+      color: @base03;
+    }
+
+    .gfm-codeblock-bg.CodeMirror-linebackground {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .cm-table-sep, .table-row.table-row-1 {
+      color: @solar-magenta;
     }
   }
 
