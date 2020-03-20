@@ -147,7 +147,12 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
   */
 
   .CodeMirror .CodeMirror-activeline-background {
-    background: rgba(0, 0, 0, 0.10);
+    background: rgba(0, 0, 0, 0.10) !important;
+  }
+  .CodeMirror-activeline .CodeMirror-linenumber {
+    background-color: @base00;
+    color: @base2;
+    text-shadow: none;
   }
   .cm-formatting-header {
     opacity: 0.3;
