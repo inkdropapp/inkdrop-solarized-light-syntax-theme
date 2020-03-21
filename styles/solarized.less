@@ -49,8 +49,14 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     .cm-qualifier { color: @solar-yellow; }
     .cm-builtin { color: @solar-magenta; }
     .cm-bracket { color: @solar-orange; }
-    .CodeMirror-matchingbracket { color: @solar-green; }
-    .CodeMirror-nonmatchingbracket { color: @solar-red; }
+    .CodeMirror-matchingbracket {
+      color: @base3 !important;
+      background-color: @base1;
+      text-shadow: none;
+    }
+    .CodeMirror-nonmatchingbracket {
+      color: @solar-red !important;
+    }
     .cm-tag { color: @base1; }
     .cm-attribute { color: @solar-cyan; }
     /*
@@ -146,13 +152,8 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
   view-port
   */
 
-  .CodeMirror .CodeMirror-activeline-background {
-    background: rgba(0, 0, 0, 0.10) !important;
-  }
-  .CodeMirror-activeline .CodeMirror-linenumber {
-    background-color: @base00;
-    color: @base2;
-    text-shadow: none;
+  .CodeMirror .CodeMirror-activeline-background, .CodeMirror .CodeMirror-activeline-gutter {
+    background: rgba(0, 0, 0, 0.06) !important;
   }
   .cm-formatting-header {
     opacity: 0.3;
