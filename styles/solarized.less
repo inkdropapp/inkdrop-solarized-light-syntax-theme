@@ -73,9 +73,14 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     }
     .cm-special { color: @solar-violet; }
     .cm-em {
-      color: #999;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-position: under;
     }
-    .cm-strong { font-weight: bold; }
+    .cm-strong {
+      font-weight: bold;
+      color: @base02;
+    }
     .cm-error,
     .cm-invalidchar {
       color: @base01;
