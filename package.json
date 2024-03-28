@@ -3,7 +3,7 @@
   "name": "solarized-light-syntax",
   "theme": "syntax",
   "styleSheets": [
-    "solarized.less"
+    "index.css"
   ],
   "engines": {
     "inkdrop": "^5.x"
