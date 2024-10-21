@@ -247,3 +247,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
     }
   }
 }
+
+body.theme-solarized-light-ui .mde-preview .codeblock pre {
+  background-color: var(--color-neutral-muted);
+}
